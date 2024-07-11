@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@400..700&family=Gugi&family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+  --text-font: gugi;
+  --heading-font: Gugi;
+  --text-size: 1rem;
+  --box-heading-size: 1.75rem;
+  --box-text-size: .90rem;
+  --heading-size: 2.5rem;
+  --big-heading: 3.75rem;
+  --subheading-size: 1.5rem;
+  --width: 95%;
+  --max-width: 1600px;
+  --border-radius: 40px;
+  --spacing-margin: 15px;
+  --btn-border-radius: 10px;
+  --main-bg-color: #222222;
+  --main-div-color : #131313;
+  --text-color: #a9a7a7;
+  --heading-color: white;
+  --button-color: linear-gradient(760deg, rgb(200, 123, 224) 27%, rgb(215, 148, 235) 100%);
+  --button-hov-color: linear-gradient(760deg, rgb(215, 148, 235) 27%, rgb(200, 123, 224) 100%);
+  --nav-links-hover: linear-gradient(760deg, #252525 27%, rgb(61, 41, 66) 100%);
+  --box-color: linear-gradient(315deg, rgba(214, 163, 228, .16), rgba(214, 163, 228, 0));
+  --box-border: .0625rem solid #48424e;
+  --foot-line: #555;
+}
+[data-theme="light"]{
+  --main-bg-color: #ffffff;
+  --main-div-color : #e7e6e6;
+  --text-color: #616161;
+  --heading-color: #2b2b2b;
+  --button-color: linear-gradient(760deg, rgb(200, 123, 224) 27%, rgb(215, 148, 235) 100%);
+  --button-hov-color: linear-gradient(760deg, rgb(215, 148, 235) 27%, rgb(200, 123, 224) 100%);
+  --nav-links-hover: linear-gradient(760deg, #f5f5f5 27%, rgb(239, 177, 255) 100%);
+  --box-color: linear-gradient(135deg, rgba(214, 163, 228, 0), rgba(214, 163, 228, .16));
+  --box-border: .0625rem solid rgba(214, 163, 228, 0.4);
+  --foot-line: #cfcfcf;
+}
+
+*{
+  margin: 0; 
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+::-webkit-scrollbar {
+  width: 10px; 
+}
+
+::-webkit-scrollbar-track {
+  background: var(--main-div-color);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(760deg, rgb(200, 123, 224) 27%, rgb(215, 148, 235) 100%);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(760deg, rgb(215, 148, 235) 27%, rgb(200, 123, 224) 100%);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+  background-color: var(--main-bg-color);
+}
+
+.animated-section {
+  opacity: 0;  
+  transition: opacity 1s ease-in-out; 
+}
+
+.animated-section.in-view {
+  opacity: 1; 
+}
+
+.animat-FadeInUp {
+  opacity: 0.75;
+  transform: translateY(30px);
+  transition: opacity .15s ease-in-out, transform 1.5s ease-in-out;
+}
+
+.animat-FadeInUp.in-viewUp {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+a{
+  color: var(--text-color);
+}
+.btn{
+  cursor: pointer;
+   background: var(--button-color);
+   padding: 8px 30px;
+   border: none;
+   border-radius: var(--btn-border-radius);
+   font-family: var(--text-font);
+   transition: background-color .5s ease-in-out, border-radius .5s ease-in-out, opacity .5s ease-in-out;
+ }
+ .btn:hover{
+   background: var(--button-hov-color);
+
+ }
+ .btn a {
+  color: var(--heading-color);
+  font-weight: 500;
+  font-size: .85rem;
+ }
+em{
+  color: rgb(200, 123, 224);
+  font-size: inherit;
+}
+h5{
+  color: var(--heading-color);
+  font-size: var(--subheading-size);
+  font-family: var(--text-font);
+   
+}
+h2{
+  color: var(--heading-color);
+  font-size: var(--big-heading);
+  font-family: var(--heading-font);
+  padding: 15px 10px 0 0;
+}
+h3{
+  color: var(--heading-color);
+  font-size: var(--heading-size);
+  font-family: var(--heading-font);
+  padding: 15px 10px 0 0;
+}
+p{
+  color: var(--text-color);
+  font-size: var(--text-size);
+  font-family: var(--text-font);
+  padding: 15px 10px 15px 0;
+  line-height: 20px !important;
+}
+
+
+
+
+/* media queries */
+@media (max-width: 1000px){
+ p{
+  line-height: 13px !important;
+ }
+ .containerImgs{
+  display: none;
+ }
+}
+@media (max-width: 600px){
+  p{
+   line-height: 10px !important;
+  }
+ }
+@media (max-width: 480px){
+  .btn{
+    padding: 3px 13px;
+  }
+  .btn a{
+    font-size: .5rem; 
+  }
+}
+ul li {
+  cursor: pointer;
+}

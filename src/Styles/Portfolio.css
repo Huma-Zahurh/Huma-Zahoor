@@ -1,0 +1,83 @@
+   .PortfolioContainer {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .PortfolioText {
+    flex: 0 0 50%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 20px;
+    align-self: flex-start;
+    padding: 50px 0;
+    z-index: 10;
+    background-color: var(--main-div-color);
+  }
+  
+  .Portfolios {
+    background-color: var(--main-div-color);
+    padding: 20px;
+    border-radius: var(--border-radius);
+    position: relative;
+    z-index: 11;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .PortfolioBox {
+    background: var(--box-color);
+    border-radius: 20px;
+    padding: 25px;
+    margin-bottom: 20px;
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out, border 0.5s ease-in-out;
+    border: var(--box-border);
+  }
+  
+  .PortfolioBox img {
+    border-radius: 20px;
+    width: 100%;
+    height: auto;
+  }
+  
+  .PortfolioBox h3 {
+    font-size: var(--box-heading-size);
+    padding: 0 10px;
+  }
+  
+  .PortfolioBox h5 {
+    font-size: 1rem;
+    padding: 20px 10px;
+  }
+  
+  @media (max-width: 900px) {
+    .PortfolioText {
+      flex: 0 0 30%;
+      padding: 50px 20px;
+    }
+    .Portfolios {
+      width: 70%;
+      padding: 10px;
+    }
+  }
+  
+  @media (max-width: 780px) {
+    .PortfolioContainer {
+      flex-direction: column;
+    }
+    .PortfolioText,
+    .Portfolios {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .PortfolioText {
+      padding: 20px 10px;
+    }
+    .PortfolioBox {
+      padding: 15px;
+    }
+  }
+  
