@@ -70,6 +70,16 @@
     .skillsBox {
       width: 100%;
     }
+    .skillContainer {
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+    .ServiceContainer{
+      gap: 0;
+    }
+    .serviceText{
+      padding: 50px 0 0 0;
+    }
   }
   
 
@@ -92,7 +102,7 @@
     position: sticky;
     top: 100px;
     align-self: flex-start;
-    padding: 50px 0;
+    padding: 50px 0 ;
     z-index: 10;
     background-color: var(--main-div-color);
   }
@@ -105,7 +115,6 @@
     flex: 0 0 60%;
     background-color: var(--main-div-color);
     padding: 20px;
-    border-radius: var(--border-radius);
     position: relative;
     z-index: 11;
   }

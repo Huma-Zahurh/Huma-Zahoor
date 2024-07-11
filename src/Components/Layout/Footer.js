@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
 import '../../Styles/Layout.css'
 import logo from '../../Assets/Logoo.png'
-import { Link } from 'react-scroll'
+import { Link as ScrollLink } from 'react-scroll';
+import { Link as RouterLink } from 'react-router-dom';
 import axios from 'axios'
 import { useTheme } from '../../ThemeContext';
 
@@ -69,30 +70,30 @@ const Footer = () => {
               <div className='footLinksContainer'>
                 <h5>Services</h5>
                 <ul>
-                  <li><Link to="services" smooth={true} duration={700}>WordPress</Link></li>
-                  <li><Link to="services" smooth={true} duration={700}>MERN</Link></li>
-                  <li><Link to="services" smooth={true} duration={700}>SEO</Link></li>
-                  <li><Link to="services" smooth={true} duration={700}>Management</Link></li>
+                  <li><ScrollLink to="services" smooth={true} duration={700}>WordPress</ScrollLink></li>
+                  <li><ScrollLink to="services" smooth={true} duration={700}>MERN</ScrollLink></li>
+                  <li><ScrollLink to="services" smooth={true} duration={700}>SEO</ScrollLink></li>
+                  <li><ScrollLink to="services" smooth={true} duration={700}>Management</ScrollLink></li>
                 </ul>
               </div>
 
               <div className='footLinksContainer'>
                 <h5>Quick Links</h5>
                 <ul>
-                  <li><Link to="about" smooth={true} duration={700}>About</Link></li>
-                  <li><Link to="services" smooth={true} duration={700}>Services</Link></li>
-                  <li><Link to="work-experience" smooth={true} duration={700}>Experience</Link></li>
-                  <li><Link to="portfolio" smooth={true} duration={700}>Portfolio</Link></li>
+                  <li><ScrollLink to="about" smooth={true} duration={700}>About</ScrollLink></li>
+                  <li><ScrollLink to="services" smooth={true} duration={700}>Services</ScrollLink></li>
+                  <li><ScrollLink to="work-experience" smooth={true} duration={700}>Experience</ScrollLink></li>
+                  <li><ScrollLink to="portfolio" smooth={true} duration={700}>Portfolio</ScrollLink></li>
                 </ul>
               </div>
             </div>
 
             <div className='contactIcons'>
               <div className='contactIconsContainer'>
-                <div className='icon'>Fb</div>
-                <div className='icon'>&nbsp;In</div>
-                <div className='icon'> &nbsp;X&nbsp;</div>
-                <div className='icon'>Git</div>
+                <div className='icon'><RouterLink to='https://www.facebook.com/profile.php?id=61562328303104'>Fb</RouterLink></div>
+                <div className='icon'><RouterLink to="https://www.linkedin.com/in/huma-zahoor-7b3011247/">&nbsp;In</RouterLink></div>
+                <div className='icon'><RouterLink to="https://x.com/humazahurh04"> &nbsp;X&nbsp;</RouterLink></div>
+                <div className='icon'><RouterLink to="https://github.com/Huma-Zahurh">Git</RouterLink></div>
               </div>
             </div>
 
@@ -103,7 +104,7 @@ const Footer = () => {
           <p>Copyright © 2024  Huma Zahoor.</p>
           <div className='footBtns'>          
             <button onClick={toggleTheme}>{theme === 'dark' ? 'Light' : 'Dark'}</button>
-            <button><Link to="top" smooth={true} duration={900}>Top</Link></button>
+            <button><ScrollLink to="top" smooth={true} duration={900}>Top</ScrollLink></button>
           </div>
 
         </div>

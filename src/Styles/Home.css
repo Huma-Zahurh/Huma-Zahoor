@@ -112,7 +112,7 @@
         --subheading-size: .75rem;
         --text-size: .65rem;
         --box-heading-size: 1.25rem;
-        --box-text-size: .5rem;
+        --box-text-size: .65rem;
     }
 }
 
@@ -184,8 +184,11 @@
     :root {
         --big-heading: 1rem;
         --box-heading-size: 1rem;
-        --box-text-size: .25rem;
+        --box-text-size: .5rem;
     }
+     .serviceBox p , .expBox p{
+        line-height: 10px !important;
+     }
     .heroSec {
         padding: 30px 5px;
     }

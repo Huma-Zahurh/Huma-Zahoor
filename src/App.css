@@ -151,9 +151,6 @@ p{
  p{
   line-height: 13px !important;
  }
- .containerImgs{
-  display: none;
- }
 }
 @media (max-width: 600px){
   p{

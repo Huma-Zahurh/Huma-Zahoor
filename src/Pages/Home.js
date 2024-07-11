@@ -1,5 +1,5 @@
 import React from 'react'
-import img from '../Assets/banner.png'
+import img from '../Assets/image.jpg'
 import Topbar from '../Components/Topbar'
 import '../Styles/Home.css'
 import Header from '..//Components/Layout/Header'

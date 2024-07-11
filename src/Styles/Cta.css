@@ -7,11 +7,16 @@
     flex-direction: column;
 }
 .CtaImg{
-    width: 70%;
+    width: 85%;
     border-radius: 20px;
 }
 .ctaSvg{
-    width: 80%;
+    width: 95%;
     margin-top: -5%;
     padding: 0;
+}
+@media (max-width: 600px){
+    .CtaContainer{
+        padding: 40px 0;
+    }
 }
