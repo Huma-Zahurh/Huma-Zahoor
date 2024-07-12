@@ -464,3 +464,10 @@ label {
     padding: 10px 80px;
   }
 }
+
+@media (max-width: 520px){
+
+  .footLinksContainer ul li {
+    padding: 3px;
+  }
+}

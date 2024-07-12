@@ -1,211 +1,210 @@
-  .skillContainer {
-    padding-top: 80px;
-    padding-bottom: 80px;
-  }
-  
-  .skillsText {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-  
+/* General Styles */
+
+.skillContainer {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.skillsText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.skillsText p {
+  width: 60%;
+}
+
+.skills {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 35%; 
+  margin-top: -10px;
+}
+
+.skillsBox {
+  width: 45%;
+  box-sizing: border-box;
+}
+
+.skillsBox svg {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 1200px) {
   .skillsText p {
-    width: 60%;
+    width: 70%; 
   }
-  
+
   .skills {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 35%; 
-    margin-top: -10px;
+    gap: 20%; 
+    margin-top: 20px;
   }
-  
+
   .skillsBox {
     width: 45%;
-    box-sizing: border-box;
   }
-  
-  .skillsBox svg {
+}
+
+@media (max-width: 900px) {
+  .skillsText p {
+    width: 90%; 
+  }
+
+  .skills {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .skillsBox {
+    width: 80%;
+  }
+}
+
+@media (max-width: 600px) {
+  .skillsText p {
+    width: 97%;
+  }
+
+  .skillsBox {
     width: 100%;
-    height: auto;
   }
-
-  @media (max-width: 1200px) {
-    .skillsText p {
-      width: 70%; 
-    }
-  
-    .skills {
-      gap: 20%; 
-      margin-top: 20px;
-    }
-  
-    .skillsBox {
-      width: 45%;
-    }
+  .skillContainer {
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
-
-  @media (max-width: 900px) {
-    .skillsText p {
-      width: 90%; 
-    }
-  
-    .skills {
-      flex-direction: column;
-      gap: 20px;
-    }
-  
-    .skillsBox {
-      width: 80%;
-    }
-  }
-  
-  @media (max-width: 600px) {
-    .skillsText p {
-      width: 97%;
-    }
-  
-    .skillsBox {
-      width: 100%;
-    }
-    .skillContainer {
-      padding-top: 40px;
-      padding-bottom: 40px;
-    }
-    .ServiceContainer{
-      gap: 0;
-    }
-    .serviceText{
-      padding: 50px 0 0 0;
-    }
-  }
-  
-
-  /* Services */
-
-  .bg {
-    background-color: var(--main-div-color);
-    border-radius: var(--border-radius);
-  }
-  
   .ServiceContainer {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
+    gap: 0;
   }
-  
   .serviceText {
-    flex: 0 0 40%;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 100px;
-    align-self: flex-start;
-    padding: 50px 0 ;
-    z-index: 10;
-    background-color: var(--main-div-color);
+    padding: 50px 0 0 0;
   }
-  
+}
+
+/* Services */
+
+.bg {
+  background-color: var(--main-div-color);
+  border-radius: var(--border-radius);
+}
+
+.ServiceContainer {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.serviceText {
+  flex: 0 0 40%;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 100px;
+  align-self: flex-start;
+  padding: 50px 0;
+  z-index: 10;
+  background-color: var(--main-div-color);
+}
+
+.services {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  flex: 0 0 60%;
+  background-color: var(--main-div-color);
+  padding: 20px;
+  position: relative;
+  z-index: 11;
+}
+
+.LeftServices,
+.RightServices {
+  flex: 1;
+  min-width: 300px;
+}
+
+.serviceBox {
+  background: var(--box-color);
+  border-radius: 20px;
+  padding: 25px;
+  margin: 10px 0; /* Ensure equal margin */
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out, border 0.5s ease-in-out;
+  border-bottom: var(--box-border);
+  border-right: var(--box-border);
+  border-top: 0.0625rem solid #48424e00;
+  border-left: 0.0625rem solid #48424e00;
+}
+
+.serviceBox:hover {
+  border: var(--box-border);
+}
+
+.serviceBox h3 {
+  font-size: var(--box-heading-size);
+  padding: 0;
+}
+
+.serviceBox p {
+  font-size: var(--box-text-size);
+  padding: 10px 0 40px 0;
+}
+
+.serviceBox button {
+  width: 100%;
+}
+
+.serviceBox h5 {
+  font-size: 1rem;
+  padding: 20px 0 20px 0;
+}
+
+@media (max-width: 1000px) {
+  .serviceBox h5 {
+    display: none;
+  }
+}
+
+@media (max-width: 900px) {
   .services {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
-    flex: 0 0 60%;
-    background-color: var(--main-div-color);
-    padding: 20px;
-    position: relative;
-    z-index: 11;
+    width: 70%;
   }
-  
-  .LeftServices,
-  .RightServices {
-    flex: 1;
-    min-width: 300px;
+  .serviceText {
+    width: 30%;
   }
-  
-  .serviceBox {
-    background: var(--box-color);
-    border-radius: 20px;
-    padding: 25px;
-    margin: 20px 0;
-    transform: translateY(20px);
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out, border 0.5s ease-in-out;
-    border-bottom: var(--box-border);
-    border-right: var(--box-border);
-    border-top: 0.0625rem solid #48424e00;
-    border-left: 0.0625rem solid #48424e00;
+}
+
+@media (max-width: 780px) {
+  .ServiceContainer {
+    flex-direction: column;
   }
-  
-  .serviceBox:hover {
-    border: var(--box-border);
+  .services,
+  .serviceText {
+    width: 100%;
   }
-  
-  .serviceBox h3 {
-    font-size: var(--box-heading-size);
+  .services {
     padding: 0;
   }
-  
-  .serviceBox p {
-    font-size: var(--box-text-size);
-    padding: 10px 0 40px 0;
+}
+
+@media (max-width: 520px) {
+  .services {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
   }
-  
-  .serviceBox button {
+  .serviceText {
+    padding: 20px 0;
+  }
+  .serviceBox {
     width: 100%;
+    padding: 15px;
+    margin: 0;
   }
-  
-  .serviceBox h5 {
-    font-size: 1rem;
-    padding: 20px 0 20px 0;
+  .serviceBox:not(:last-child) {
+    margin-bottom: 20px; 
   }
-  
-  @media (max-width: 1000px) {
-    .serviceBox h5 {
-      display: none;
-    }
-  }
-  
-  @media (max-width: 900px) {
-    .services {
-      width: 70%;
-    }
-    .serviceText {
-      width: 30%;
-    }
-  }
-  
-  @media (max-width: 780px) {
-    .ServiceContainer {
-      flex-direction: column;
-    }
-    .services,
-    .serviceText {
-      width: 100%;
-    }
-    .services {
-      padding: 0;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .serviceText {
-      padding: 20px 0;
-    }
-    .serviceBox {
-      padding: 15px;
-    }
-  }
-  
-  @media (min-width: 1200px) {
-    .services {
-      width: 60%;
-    }
-  
-    .LeftServices,
-    .RightServices {
-      width: 50%;
-    }
-  }
-  
+}

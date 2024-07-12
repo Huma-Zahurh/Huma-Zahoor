@@ -30,7 +30,6 @@
     background: var(--box-color);
     border-radius: 20px;
     padding: 25px;
-    margin-bottom: 20px;
     transition: opacity 0.6s ease-out, transform 0.6s ease-out, border 0.5s ease-in-out;
     border: var(--box-border);
   }
@@ -47,7 +46,7 @@
   }
   
   .PortfolioBox h5 {
-    font-size: 1rem;
+    font-size: var(--box-text-size);
     padding: 20px 10px;
   }
   

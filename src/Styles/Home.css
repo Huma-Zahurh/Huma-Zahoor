@@ -1,7 +1,6 @@
 /* Default styles */
 .container {
     margin: 0 15px;
-    /* width: 100%; */
 }
 .Hero_bg{
     background-color: var(--main-div-color);
@@ -178,6 +177,9 @@
 @media (max-width: 520px){
     .Hero_bg{
         padding-bottom: 34%;
+    }
+    .container {
+        margin: 0 5px;
     }
 }
 @media (max-width: 420px) {
