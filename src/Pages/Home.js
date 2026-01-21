@@ -69,7 +69,7 @@ const Svgimg = () => {
 
 
                                         <p>
-                                            I’m Huma Zahoor — a strategist at heart and a developer by skill.
+                                            I’m Huma Zahoor, a strategist at heart and a developer by skill.
                                             I design and build websites that don’t just look good, but work as
                                             growth-ready digital systems.
                                         </p>
@@ -82,7 +82,7 @@ const Svgimg = () => {
 
                                         <p>
                                             Every project I take on is approached with clarity, structure, and
-                                            long-term scalability in mind — because quality execution builds
+                                            long-term scalability in mind  because quality execution builds
                                             lasting partnerships.
                                         </p>
                                     </div>
