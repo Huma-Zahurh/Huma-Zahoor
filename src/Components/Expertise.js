@@ -81,7 +81,7 @@ const Expertise = () => {
                         <div className='expBox portfolioBoxContainer'>
                             <div className='scrolling-portfolio'>
                                 <div className='CountBox'>
-                                    <h6>50+</h6>
+                                    <h6>90+</h6>
                                     <p>Happy Clients</p>
                                 </div>
                                 <div className='CountBox'>
@@ -89,7 +89,7 @@ const Expertise = () => {
                                     <p>Projects Done</p>
                                 </div>
                                 <div className='CountBox'>
-                                    <h6>2+</h6>
+                                    <h6>4+</h6>
                                     <p>Years Of Experience</p>
                                 </div>
                                 <div className='CountBox'>
@@ -97,7 +97,7 @@ const Expertise = () => {
                                     <p>Companies Worked With</p>
                                 </div>
                                 <div className='CountBox'>
-                                    <h6>50+</h6>
+                                    <h6>90+</h6>
                                     <p>Happy Clients</p>
                                 </div>
                                 <div className='CountBox'>
@@ -105,7 +105,7 @@ const Expertise = () => {
                                     <p>Projects Done</p>
                                 </div>
                                 <div className='CountBox'>
-                                    <h6>2+</h6>
+                                    <h6>4+</h6>
                                     <p>Years Of Experience</p>
                                 </div>
                                 <div className='CountBox'>

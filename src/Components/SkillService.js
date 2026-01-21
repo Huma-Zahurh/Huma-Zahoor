@@ -20,7 +20,9 @@ const SkillService = () => {
         <div className='skillsText'>
           <h5><em>●</em> Skills</h5>
           <h3>Technical Proficiency</h3>
-          <p>WordPress & MERN Stack Apprentice I development skills in WordPress, deep passion for working on technology which is core of connectivity. I have honed a variety of internet techniques and SEO best practices so that I can provide high performance output and user experience</p>
+          {/* <p>WordPress & MERN Stack Apprentice I development skills in WordPress, deep passion for working on technology which is core of connectivity. I have honed a variety of internet techniques and SEO best practices so that I can provide high performance output and user experience</p> */}
+
+          <p>I focus on building high-performance, scalable websites with clean structure and smooth user experience. My work combines strong technical execution with SEO best practices and trust-driven UX, ensuring each project is optimized for speed, search visibility, and long-term growth rather than just visual appeal.</p>
 
         </div>
 
@@ -57,7 +59,7 @@ const SkillService = () => {
         <div className='serviceText'>
           <h5><em>●</em> Services</h5>
           <h3>What I Do</h3>
-          <p>I provide a wide array of web development services designed to cater your needs. I specialize in custom WordPress development, SEO optimization, and full-stack skills to ensure I produce outstanding results.</p>
+          <p>I provide end-to-end web development services tailored to modern business needs, with a strong focus on custom WordPress development, SEO-first implementation, and full-stack solutions. My approach ensures every website is built for performance, scalability, and conversion—delivering results that go beyond design and support long-term growth.</p>
         </div>
         <div className='services'>
           <div className='LeftServices'>
@@ -69,21 +71,22 @@ const SkillService = () => {
             </div>
             <div className='serviceBox'>
               <h3>MERN Stack</h3>
-              <p>Building scalable and robust web applications with the MERN stack, ensuring a seamless integration of MongoDB, Express.js, React, and Node.js for high-performance results.</p>
+              <p>Building scalable & robust web applications with the MERN stack, ensuring a seamless integration of MongoDB, Express.js, React, & Node.js for high-performance results.</p>
               <h5><em>●</em> Available</h5>
               <button className='btn'><Link to="contact" smooth={true} duration={700}>More Details</Link></button>
             </div>
           </div>
           <div className='RightServices'>
-            <div className='serviceBox'>
+                        <div className='serviceBox'>
               <h3>SEO</h3>
-              <p>Implementing tailored SEO strategies to boost your website's visibility, drive organic traffic, and enhance your online presence for sustained growth.</p>
+              <p>Implementing tailored SEO strategies to boost your website's visibility, drive organic traffic, and enhance your online presence for sustained growth.
+              </p>
               <h5><em>●</em> Available</h5>
               <button className='btn'><Link to="contact" smooth={true} duration={700}>More Details</Link></button>
             </div>
             <div className='serviceBox'>
-              <h3>Management</h3>
-              <p>Providing comprehensive website management services to ensure your site runs smoothly, with regular updates and performance optimizations to keep it at its best.</p>
+              <h3>Shopify</h3>
+              <p>Designing clean, conversion-focused Shopify stores aligned with user behavior & product psychology. Built to support marketing funnels, and scalability.</p>
               <h5><em>●</em> Available</h5>
               <button className='btn'><Link to="contact" smooth={true} duration={700}>More Details</Link></button>
             </div>

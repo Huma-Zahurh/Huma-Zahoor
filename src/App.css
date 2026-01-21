@@ -16,7 +16,8 @@
   --btn-border-radius: 10px;
   --main-bg-color: #222222;
   --main-div-color : #131313;
-  --text-color: #a9a7a7;
+  /* --text-color: #a9a7a7; */
+  --text-color: #d3d2d2;
   --heading-color: white;
   --button-color: linear-gradient(760deg, rgb(200, 123, 224) 27%, rgb(215, 148, 235) 100%);
   --button-hov-color: linear-gradient(760deg, rgb(215, 148, 235) 27%, rgb(200, 123, 224) 100%);

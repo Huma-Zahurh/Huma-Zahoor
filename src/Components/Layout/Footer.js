@@ -73,7 +73,7 @@ const Footer = () => {
                   <li><ScrollLink to="services" smooth={true} duration={700}>WordPress</ScrollLink></li>
                   <li><ScrollLink to="services" smooth={true} duration={700}>MERN</ScrollLink></li>
                   <li><ScrollLink to="services" smooth={true} duration={700}>SEO</ScrollLink></li>
-                  <li><ScrollLink to="services" smooth={true} duration={700}>Management</ScrollLink></li>
+                  <li><ScrollLink to="services" smooth={true} duration={700}>Shopify</ScrollLink></li>
                 </ul>
               </div>
 
